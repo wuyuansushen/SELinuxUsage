@@ -25,6 +25,8 @@ Temporary:
 setenforce [ 0 | 1 ]
 ```
 
+>Tip: 0=Permissive, 1=Enforcing
+
 Permanent:
 file `/etc/selinux/config`
 ```
