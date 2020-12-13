@@ -32,3 +32,16 @@ file `/etc/selinux/config`
 ```
 SELINUX=enforcing
 ```
+
+## 4.Change SELinux Port Type
+
+List SELinux Port Type
+```
+semanage port -l
+```
+
+Add SELinux Port Type
+
+```
+semanage port -a -t <SELinuxPortType> -p [ tcp | udp ] [ PortNumber ]
+```
