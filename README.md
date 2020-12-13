@@ -63,6 +63,11 @@ Change SELinux File type with reference another file
 chcon -R -v --reference=<ReferenceFile> <FilePath>
 ```
 
+Change SELinux File Default context type
+```
+semanage fcontext -a -t <SELinuxFileType> "<DirectoryPath>(/.*)?"
+```
+
 Restore SELinux File type with default context
 ```
 restorecon -R -v <FilePath>
