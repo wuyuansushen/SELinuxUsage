@@ -45,3 +45,8 @@ Add SELinux Port Type
 ```
 semanage port -a -t <SELinuxPortType> -p [ tcp | udp ] [ PortNumber ]
 ```
+
+Delete SELinux Port Type
+```
+semanage port -d -t <SELinuxPortType> -p [ tcp | udp ] [ PortNumber ]
+```
