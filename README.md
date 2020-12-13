@@ -50,3 +50,20 @@ Delete SELinux Port Type
 ```
 semanage port -d -t <SELinuxPortType> -p [ tcp | udp ] [ PortNumber ]
 ```
+
+## 5.Change SELinux File type
+
+List SELinux File type
+```
+ls -aslZ <DirectoryPath>
+```
+
+Change SELinux File type with reference another file
+```
+chcon -R -v --reference=<ReferenceFile> <FilePath>
+```
+
+Restore SELinux File type with default context
+```
+restorecon -R -v <FilePath>
+```
