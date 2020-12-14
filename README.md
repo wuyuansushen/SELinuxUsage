@@ -80,7 +80,7 @@ restorecon -R -v <FilePath>
 
 Generate a local policy module to allow some access
 
-Install a module package
+Generate SELinux policy allow rules module package from logs of denied operations and Install a module package
 ```
 ausearch -c '<daemonCommand>' --raw | audit2allow -M <moduleName>
 semodule -i <moduleName>.pp
