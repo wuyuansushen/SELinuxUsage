@@ -74,3 +74,5 @@ Restore SELinux File type with default context
 ```
 restorecon -R -v <FilePath>
 ```
+
+## 6. (Advanced) Change SELinux Service type
