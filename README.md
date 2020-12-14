@@ -77,3 +77,9 @@ restorecon -R -v <FilePath>
 
 ## 6. (Advanced) Change SELinux Service type
 Generate a local policy module to allow some access
+
+Install 
+```
+ausearch -c '<daemonCommand>' --raw | audit2allow -M <moduleName>
+semodule -i <moduleName>.pp
+```
