@@ -35,6 +35,8 @@ SELINUX=enforcing
 
 ## 4.Change SELinux Port Type
 
+>:warning:Following operation must be with SELinux On enviroment
+
 List SELinux Port Type
 ```
 semanage port -l
