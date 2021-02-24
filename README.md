@@ -75,7 +75,13 @@ Restore SELinux File type with default context
 restorecon -R -v <FilePath>
 ```
 
-## 6. (Advanced) Change SELinux Service type
+## 6.(Advanced)Change SELinux Service type
+
+```
+dnf install -y setroubleshoot	#Collect SELinux Error
+journalctl -t setroubleshoot	#Log Error and Fix Advice
+```
+
 >:warning: This section must run after error caused of SELinux
 
 Generate a local policy module to allow some access
