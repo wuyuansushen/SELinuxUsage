@@ -82,6 +82,6 @@ Generate a local policy module to allow some access
 
 Generate SELinux policy allow rules module package from logs of denied operations and Install a module package
 ```
-ausearch -c '<daemonCommand>' --raw | audit2allow -M <moduleName>
+ausearch -c '<daemonCommand>' | audit2allow -M <moduleName>
 semodule -i <moduleName>.pp
 ```
