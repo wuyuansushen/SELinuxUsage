@@ -1,5 +1,14 @@
 # SELinuxUsage
 
+## Normal Usage
+
+Basic Usage for files in daily life(`-Z` option)
+
+```
+cp -Z [Source] [Destination]
+mv -Z [Source] [Destination]
+```
+
 ## 1.Install manage tool
 
 ```
